@@ -68,10 +68,12 @@
 
         /**
          * Decorate a function that returns a promise
+         *
+         * @return a new decorated function
          */
         function decoratedFn(fn, context) {
             return function promiseStateDecoratedFn() {
-                var promise = fn.apply(context, arguments);
+                var promise = fn.apply(context || this, arguments);
                 if (angular.isFunction(promise.then)) {
                     decoratePromise(promise);
                 }
@@ -80,4 +82,5 @@
         }
 
     });
+
 })();

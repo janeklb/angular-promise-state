@@ -1,7 +1,7 @@
 {
-  "name": "promise-state",
+  "name": "angular-promise-state",
   "version": "0.9.0",
-  "description": "Simple syntax to attach to (AngularJS) $http's promise state",
+  "description": "Simple syntactic sugar to bind to AngularJS promise states",
   "main": "promise-state.js",
   "directories": {
     "test": "test"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/janeklb/promise-state.git"
+    "url": "https://github.com/janeklb/angular-promise-state.git"
   },
   "keywords": [
     "angular",
@@ -20,9 +20,9 @@
   "author": "Janek Lasocki-Biczysko <janek.lb@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/janeklb/promise-state/issues"
+    "url": "https://github.com/janeklb/angular-promise-state/issues"
   },
-  "homepage": "https://github.com/janeklb/promise-state",
+  "homepage": "https://github.com/janeklb/angular-promise-state",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",

@@ -1,16 +1,16 @@
 {
-  "name": "promise-state",
+  "name": "angular-promise-state",
   "main": "promise-state.js",
   "version": "0.9.0",
   "authors": [
-    "Janek Lasocki-Biczysko <iamjanek@gmail.com>"
+    "Janek Lasocki-Biczysko <janek.lb@gmail.com>"
   ],
   "keywords": [
     "angular",
     "promise"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/janeklb/promise-state",
+  "homepage": "https://github.com/janeklb/angular-promise-state",
   "ignore": [
     "**/.*",
     "node_modules",
