@@ -26,10 +26,43 @@ describe("promise-state", function() {
 			expect(object.property).toBe(true);
 		});
 
-		it("should update state after binding with custom value", function() {
+		it("should update state after binding, with custom value", function() {
 			promiseState.decoratePromise(promise);
 			promise.bindPending(object, 'property', 'HELLO');
 			expect(object.property).toBe('HELLO');
+		});
+
+		it("should update state after promise is resolved", function() {
+			runs(function() {
+				promiseState.decoratePromise(promise);
+				promise.bindPending(object, 'property');
+				deferred.resolve(true);
+				return promise;
+			}, function() {
+				expect(object.property).toBe(false);
+			});
+		});
+
+		it("should update state after promise is rejected", function() {
+			runs(function() {
+				promiseState.decoratePromise(promise);
+				promise.bindPending(object, 'property');
+				deferred.reject(true);
+				return promise;
+			}, function() {
+				expect(object.property).toBe(false);
+			});
+		});
+
+		it("should update state after promise is resolved, with custom value", function() {
+			runs(function() {
+				promiseState.decoratePromise(promise);
+				promise.bindPending(object, 'property', false, 'DONE');
+				deferred.resolve(true);
+				return promise;
+			}, function() {
+				expect(object.property).toBe('DONE');
+			});
 		});
 
 	});
