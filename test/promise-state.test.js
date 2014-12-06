@@ -107,6 +107,32 @@ describe("promise-state", function() {
 			});
 		});
 
+		describe("a more fleshed out scenario", function() {
+
+			var $httpBackend,
+				object;
+
+			beforeEach(inject(function(_$httpBackend_) {
+				$httpBackend = _$httpBackend_;
+				object = {};
+			}));
+
+			it("should 'work in a real-world scenario", function() {
+
+				expect(object.isLoading).toBeUndefined();
+
+				var a = $http.get('/test').bindPending(object, 'isLoading');
+				$httpBackend.whenGET('/test').respond('OK');
+
+				expect(object.isLoading).toBe(true);
+
+				$httpBackend.flush();
+
+				expect(object.isLoading).toBe(false);
+			});
+
+		});
+
 	});
 
 	describe("module with decorated $http service, and custom property name", function() {

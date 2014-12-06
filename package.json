@@ -1,7 +1,7 @@
 {
   "name": "angular-promise-state",
   "version": "0.9.0",
-  "description": "Simple syntactic sugar to bind to AngularJS promise states",
+  "description": "Simple promise decoration to bind to AngularJS promise states",
   "main": "promise-state.js",
   "directories": {
     "test": "test"
