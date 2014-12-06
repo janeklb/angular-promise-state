@@ -1,0 +1,28 @@
+{
+  "name": "promise-state",
+  "main": "promise-state.js",
+  "version": "0.9.0",
+  "authors": [
+    "Janek Lasocki-Biczysko <iamjanek@gmail.com>"
+  ],
+  "keywords": [
+    "angular",
+    "promise"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/janeklb/promise-state",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.3"
+  }
+}

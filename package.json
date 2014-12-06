@@ -1,0 +1,38 @@
+{
+  "name": "promise-state",
+  "version": "0.9.0",
+  "description": "Simple syntax to attach to (AngularJS) $http's promise state",
+  "main": "promise-state.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janeklb/promise-state.git"
+  },
+  "keywords": [
+    "angular",
+    "promise"
+  ],
+  "author": "Janek Lasocki-Biczysko <janek.lb@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janeklb/promise-state/issues"
+  },
+  "homepage": "https://github.com/janeklb/promise-state",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-karma": "^0.9.0",
+    "jasmine-as-promised": "0.0.8",
+    "jasmine-core": "^2.1.3",
+    "karma": "^0.12.28",
+    "karma-jasmine": "^0.3.2",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "load-grunt-tasks": "^1.0.0"
+  }
+}

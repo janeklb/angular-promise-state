@@ -1,0 +1,10 @@
+{
+  "laxcomma": true,
+  "-W032": true,
+  "-W097": true,
+  "-W030": true,
+  "-W041": true,
+  "globals": {
+    "angular": false
+  }
+}
